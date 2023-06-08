@@ -25,3 +25,42 @@ print(arreglo[2::])
 print(arreglo[1:3:])
 print(arreglo[::2])
 
+#Formas de rellenar un array
+#Forma 1 = array con relleno de ciclo FOR
+arreglo2 =np.array([i for i in range (1,11)])
+print(arreglo2)
+
+#forma 2 = Arange
+arreglo3 = np.arange(1,11)
+print(arreglo3)
+
+#Recorrer datos del arreglo
+#FOR i
+for i in range(10):
+    print(arreglo3[i])
+#foreach
+for i in arreglo3:
+    print(i)
+
+
+#Operaciones matematicas con arreglos
+#sumarle 5 al arreglo
+arreglo3+=5
+print(arreglo3)
+#Multiplicación x 10
+arreglo3*=10
+print(arreglo3)
+#Comparaciones
+print(arreglo3>arreglo2)
+
+#Utilidades
+#Sum = suma todos los valores del arreglo
+print(arreglo3.sum())
+
+#Mean = Genera el promedio de los valores del arreglo
+print(arreglo3.mean())
+
+#Max = El valor mas alto
+#Min = El mas bajo
+print(arreglo3.max())
+print(arreglo3.min())
