@@ -1,0 +1,27 @@
+#importar libreria para arreglos: "pip install numpy" en terminal
+import numpy as np #np se utiliza para abreviar el arreglo cuando lo queramos llamar
+
+l=[1,2,3,4,5]
+print(l)
+#transformar lista en arreglo
+arreglo= np.array(l)
+print(arreglo)
+
+#ndim = muestra las funciones del arreglo
+print(arreglo.ndim)
+
+#arreglo.size = muestra el largo del areglo
+print(arreglo.size)
+
+#shape=muestra la forma del arreglo (filas, columnas, profundidad)
+print(arreglo.shape)
+
+#Slice
+#[Start:Stop:Step]
+# Start:: = Indico desde donde debe empezar a usar datos
+# :Stop: = Indica hasta donde debe usar datos
+# ::Step = Indica de cuanto en cuanto recorre los datos
+print(arreglo[2::])
+print(arreglo[1:3:])
+print(arreglo[::2])
+
