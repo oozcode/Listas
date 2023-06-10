@@ -1,0 +1,27 @@
+import numpy as np
+import random
+pares=0
+impares=0
+arreglo_1=np.random.randint(0,1000,(10))
+print(arreglo_1)
+print("--------------------")
+for i in arreglo_1:
+    if i%2==0:
+        pares+=1
+    if i%2!=0:
+        impares+=1
+print(f"La cantidad de elementos pares es {pares}")
+print(f"la cantidad de elementos impares es {impares}")
+print("--------------------")
+primos = []
+for num in arreglo_1:
+    if num > 1:
+        es_primo = True
+        for i in range(2, num):
+            if num % i == 0:
+                es_primo = False
+                break
+        if es_primo:
+            primos.append(num)
+
+print("Los números primos en el arreglo son:", primos)
