@@ -2,6 +2,7 @@ import numpy as np
 import random
 pares=0
 impares=0
+impa=[]
 arreglo_1=np.random.randint(0,1000,(10))
 print(arreglo_1)
 print("--------------------")
@@ -10,8 +11,11 @@ for i in arreglo_1:
         pares+=1
     if i%2!=0:
         impares+=1
+        impa.append(i)
 print(f"La cantidad de elementos pares es {pares}")
 print(f"la cantidad de elementos impares es {impares}")
+print("--------------------")
+print (f"La suma de los elementos impares es {impa.sum()}")
 print("--------------------")
 primos = []
 for num in arreglo_1:

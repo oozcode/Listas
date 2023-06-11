@@ -1,0 +1,23 @@
+import random
+import numpy as np
+A=np.random.randint(0,100,(10))
+B=np.random.randint(0,100,(10))
+print(A)
+print(B)
+print("---------------------")
+print(f"La suma de todos los elementos del arreglo A es {A.sum()}")
+print(f"La suma de todos los elementos del arreglo B es {B.sum()}")
+print("---------------------")
+print(f"La suma de los elementos de ambos arreglos es {A.sum()+B.sum()}")
+print("---------------------")
+impares=[]
+for i in B:
+    if i%2!=0:
+        impares.append(i)
+        print(f"la tabla de multplicar de los elementos impares de la tabla b es \t\t {impares} ")
+print("---------------------")
+for num in impares:
+    print(f"Tabla de multiplicar del número {num}:")
+    for i in range(1, 12):
+        resultado = num * i
+        print(f"{num} x {i} = {resultado}")
