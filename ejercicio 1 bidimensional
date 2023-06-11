@@ -1,0 +1,10 @@
+import numpy as np
+import random
+arreglo=np.random.randint(0,10,(3,3))
+arreglo2=np.random.randint(0,10,(3,3))
+print(arreglo)
+print(arreglo2)
+print("---------------")
+multi=(arreglo*arreglo2)
+print(multi)
+print("---------------")
