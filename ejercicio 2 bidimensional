@@ -1,0 +1,3 @@
+import numpy as np
+bus=np.arange(1,41).reshape(10,4)
+print(bus)
